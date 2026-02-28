@@ -9,3 +9,13 @@ function createGrids() {
 }
 
 createGrids();
+
+const hover = document.querySelector(".square");
+
+container.addEventListener("mouseover", () => {
+    container.style.backgroundColor = "black";
+})
+
+container.addEventListener("mouseout", () => {
+    container.style.backgroundColor = "";
+})
