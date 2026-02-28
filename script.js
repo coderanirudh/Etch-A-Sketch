@@ -1,7 +1,13 @@
 const container = document.querySelector("#grid-container");
 
 function createGrids() {
-    for (let i=0; i<256; i++) {
+
+    const userInput = prompt("Enter the no.of squares: ");
+    const temp = userInput * userInput;
+
+    container.replaceChildren();
+
+    for (let i=0; i<temp; i++) {
         const div = document.createElement("div");
         div.classList.add("square");
         container.appendChild(div);
@@ -16,4 +22,6 @@ function createGrids() {
     }
 }
 
-createGrids();
+
+const button = document.querySelector("button");
+button.addEventListener("click", createGrids);
