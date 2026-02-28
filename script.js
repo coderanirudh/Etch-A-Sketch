@@ -5,6 +5,8 @@ function createGrids() {
         const div = document.createElement("div");
         div.classList.add("square");
         container.appendChild(div);
+
+        //add the eventlistener for mouseover and mouseout for color change
         div.addEventListener("mouseover", () => {
             div.style.backgroundColor = "black";
         })
