@@ -5,17 +5,13 @@ function createGrids() {
         const div = document.createElement("div");
         div.classList.add("square");
         container.appendChild(div);
+        div.addEventListener("mouseover", () => {
+            div.style.backgroundColor = "black";
+        })
+        div.addEventListener("mouseout", () => {
+            div.style.backgroundColor = "black";
+        })
     }
 }
 
 createGrids();
-
-const hover = document.querySelector(".square");
-
-container.addEventListener("mouseover", () => {
-    container.style.backgroundColor = "black";
-})
-
-container.addEventListener("mouseout", () => {
-    container.style.backgroundColor = "";
-})
